@@ -1,0 +1,20 @@
+TO DO LIST :
+- make navigation to preliminary database from main
+- have users default to main page (have login link)
+  - redirect them to their profile
+    - their profile will have " create blog post button " 
+  - email verification (figure that out somehow) <-- done at a later date
+
+FUNDAMENTALS:
+- we need html pages (just rough outlines for now)
+- we need basic CSS to just make it not confusing to read
+- 
+
+DATABASE:
+- buttons for CRUD
+- page for simple outline
+  - page for first SPRINT to display all information in it while it's being edited
+- maybe make page for user to add blog / log in 
+
+
+1st SPRINT : Hopefully this wednesday 11/25 before noon (very basic outline just basic html, database, possible CSS, and possible prototype for user page and blog input)
