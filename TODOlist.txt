@@ -1,6 +1,5 @@
 TO DO LIST :
 - make navigation to preliminary database from main
-- have users default to main page (have login link)
   - redirect them to their profile
     - their profile will have " create blog post button " 
   - email verification (figure that out somehow) <-- done at a later date
