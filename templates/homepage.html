@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Around The World{% endblock %}
+
+{% block page_content %}
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Around The World</title>
+    </head>
+
+<body>
+
+    <div id="background">
+        <h1 id="big_title">EXPLORE THE WORLD</h1><hr>
+        <h3 id="small_title">And share your journey...</h3>
+    </div>
+
+    <div id="submissions">
+        <p></p>
+        <img>
+    </div>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}"/>
+</body>
+
+{% endblock %}
