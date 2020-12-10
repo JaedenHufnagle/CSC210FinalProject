@@ -156,6 +156,10 @@ def homepage():
 def al_tkn():
     return render_template('user_already_taken.html')
 
+@app.route('/aboutus.html')
+def aboutus():
+    return render_template('aboutus.html')
+
 @app.route('/signup.html', methods=['GET','POST'])
 def signup():
     verify = False
