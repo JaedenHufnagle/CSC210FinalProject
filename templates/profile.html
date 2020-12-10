@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Around The World{% endblock %}
+
+<html lang="en">
+
+{% block page_content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Around The World</title>
+</head>
+
+<body>
+    <div>
+    <h1>{{Name}}'s Profile</h1>
+    <p>
+    Email: {{Email}}<br>
+    Username: {{Username}}<br>
+    Password: {{Password}}
+    {{wtf.quick_form(Profile)}}
+    </p>
+
+    <p>    {{wtf.quick_form(Post)}} </p>
+
+    <p>    {{wtf.quick_form(Delete)}} </p>
+
+    <p> Fill out the form below to update your email: </p>
+    
+    {{wtf.quick_form(emailup)}}
+
+    {{wtf.quick_form(newNam)}}
+    </div>
+    }
+
+</body>
+
+{% endblock %}

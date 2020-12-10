@@ -8,29 +8,24 @@
 
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/signup.css') }}"/>
 
-<form action="">
 
-    <div class="container">
+<div class="container">
 
-      <h1>Around The World</h1>
-      <p>Sign up to view blog posts</p>
-      <hr><br>
+  <h1>Around The World</h1>
+  <a href='/signup.html'>Sign up to view blog posts</a>
+  <hr><br>
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+  <ul class=flashes>
+  {% for message in messages %}
+  <li>{{ message }}</li>
+  {% endfor %}
+  </ul>
+  {% endif %}
+  {% endwith %}
 
-      <a id="signuplink"href="signup.html">New to Around The World? Create an account!</a>
-        
-      <br><label for="username"><b>username</b></label>
-      <input class="i_field" type="text" placeholder="Enter Username" name="username" required><br>
+  {{wtf.quick_form(form)}}
 
-      <br><label for="password"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="password" required><br>
-  
-      <br><div class="clearfix">
-        <button type="submit" class="signinbtn">Log In</button>
-
-      </div>
-
-    </div>
-
-  </form>
+</div>
 
   {% endblock %}

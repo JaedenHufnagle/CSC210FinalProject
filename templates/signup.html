@@ -8,33 +8,16 @@
 
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/signup.css') }}"/>
 
-<form action="">
 
     <div class="container">
 
       <h1>Around The World</h1>
       <p>Sign up to view blog posts</p>
-      <hr><br>
-        
-      <label for="Name"><b>Name</b></label>
-      <input class="i_field" type="text" placeholder="Enter Name" name="name" required><br>
 
-      <br><label for="username"><b>username</b></label>
-      <input class="i_field" type="text" placeholder="Enter Username" name="username" required><br>
-
-      <br><label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required><br>
-  
-      <br><label for="password"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="password" required><br>
-  
-      <br><div class="clearfix">
-        <button type="submit" class="signupbtn">Sign Up</button>
+      {{wtf.quick_form(siup)}}
 
       </div>
 
     </div>
-
-  </form>
 
   {% endblock %}

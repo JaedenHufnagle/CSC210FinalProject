@@ -1,3 +1,4 @@
+
 {% extends "base.html" %}
 
 {% import "bootstrap/wtf.html" as wtf %}
@@ -18,6 +19,15 @@
     <div id="background">
         <h1 id="big_title">EXPLORE THE WORLD</h1><hr>
         <h3 id="small_title">And share your journey...</h3>
+
+        <a id="signuplink"href="signup.html">New to Around The World? Create an account!</a>
+        <ul>
+
+        {% for i in dataT %}
+          <li>{{i.author}} -- {{i.title}} -- {{i.post}} -- {{i.locationInPost}}</li>
+        {% endfor %}
+      </ul>
+
     </div>
 
     <div id="submissions">
