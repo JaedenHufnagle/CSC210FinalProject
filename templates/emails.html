@@ -7,21 +7,19 @@
 {% block page_content %}
 
 <html lang="en">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/post.css') }}"/>
+
     <head>
         <meta charset="UTF-8">
         <title>Around The World</title>
     </head>
     
     <body>
-        <div class="form-1">
+        <div>
 
             {{wtf.quick_form(emailup)}}
 
         </div>
 
     </body>
-
-</html>
 
 {% endblock %}

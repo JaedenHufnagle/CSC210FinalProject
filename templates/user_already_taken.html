@@ -5,16 +5,14 @@
 {% block title %}Around The World{% endblock %}
 
 {% block page_content %}
- 
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/post.css') }}"/>
- <div class="form-1">
+
+ <div>
         <h1>Uh Oh! There was an error!</h1>
 
         <p>Seems like the username {{userData}} has already been taken by someone else!</p>
 
         <a href="{{ url_for('signup') }}"type="button" class="btn btn-outline-primary">Try Again!</a>
-  
 
     </div>
 
-  {% endblock %}
+{% endblock %}
