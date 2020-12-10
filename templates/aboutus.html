@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Around The World{% endblock %}
+
+{% block page_content %}
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/aboutus.css') }}"/>
+
+<body>
+    <div id="lamine">
+        <img class="images" src="/static/img/lamine.jpg" alt="Lamine Male" width="100" height="100"><br>
+        <p class="texts">My name is Lamine and I am a computer science senior from Senegal. I love programming games and traveling whenever the opportunity arises. I have visited all continents but South America, Asia and Oceania. Working on this project was a blast and makes me look toward traveling again once the pandemic is over. </p><br>
+    </div>
+    
+    <div id="alex">
+        <img class="images" src="/static/img/alex.jpg" alt="Alex Rabideau" width="100" height="100"><br>
+        <p class="texts">Your Text Here</p><br>
+    </div>
+
+    <div id="jaeden">
+        <img class="images" src="/static/img/jaeden.jpg" alt="Jaeden Hufnagle" width="100" height="100"><br>
+        <p class="texts">Your Text Here</p><br>
+    </div>
+</body>
+
+
+{% endblock %}
