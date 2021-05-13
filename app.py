@@ -23,7 +23,6 @@ app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USERNAME'] = 'traveltheworld977@gmail.com'
-app.config['MAIL_PASSWORD'] = 'Webdev2!'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 app.config ['MAIL_DEFAULT_SENDER']  =  'traveltheworld977@gmail.com'
